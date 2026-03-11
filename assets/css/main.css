@@ -923,16 +923,10 @@ section,
 --------------------------------------------------------------*/
 .feature-details .features-item {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.feature-details .features-item+.features-item {
-  margin-top: 100px;
-}
-
-@media (max-width: 640px) {
-  .feature-details .features-item+.features-item {
-    margin-top: 40px;
-  }
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-radius: 16px;
+  padding: 28px;
 }
 
 .feature-details .features-item h3 {
@@ -1431,7 +1425,7 @@ section,
 # EDI Nexus Customizations
 --------------------------------------------------------------*/
 .hero {
-  background: radial-gradient(circle at 90% 10%, color-mix(in srgb, var(--accent-color), white 80%) 0%, transparent 45%);
+  background: var(--background-color);
 }
 
 .hero .hero-kicker {
@@ -1475,16 +1469,8 @@ section,
 
 .hero .hero-img img {
   width: 100%;
-  max-width: 520px;
+  max-width: 720px;
   height: auto;
-  margin: 0 auto;
-}
-
-.feature-details .features-item img {
-  width: 100%;
-  max-width: 420px;
-  max-height: 360px;
-  object-fit: contain;
   margin: 0 auto;
 }
 

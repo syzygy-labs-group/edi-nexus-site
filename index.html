@@ -78,6 +78,11 @@
       ]
     }
   </script>
+
+  <!-- Calendly link widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <!-- Calendly link widget end -->
 </head>
 
 <body class="index-page">
@@ -104,7 +109,9 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#contact">Book a Demo</a>
+      <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/szglabs-sales/szg-nexus-solutions-consultation'}); return false;" class="btn-getstarted" rel="noopener noreferrer">
+        Book a Demo
+      </a>
     </div>
   </header>
 
@@ -121,7 +128,10 @@
             <h1>Retailer-Ready EDI, Without the Black Box</h1>
             <p>SZG Nexus gives your team clear mapping visibility, event-driven automation, and reliable AS2/SFTP delivery.</p>
             <div class="d-flex mt-4 justify-content-center justify-content-md-start hero-cta-group">
-              <a href="#contact" class="download-btn"><i class="bi bi-calendar-event"></i><span>Schedule Demo</span></a>
+              <!-- <a href="#contact" class="download-btn"><i class="bi bi-calendar-event"></i><span>Schedule Demo</span></a> -->
+              <a href="#" class="download-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/szglabs-sales/szg-nexus-solutions-consultation'}); return false;" rel="noopener noreferrer">
+                <i class="bi bi-calendar-event"></i><span>Schedule Demo</span></a>
+              </a>
               <a href="#comparison" class="download-btn secondary-btn"><i class="bi bi-bar-chart-steps"></i><span>Compare Platforms</span></a>
             </div>
             <ul class="hero-proof mt-4">
@@ -462,7 +472,7 @@
 
     <section id="contact" class="contact section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Book a Demo</h2>
+        <h2>Contact Us</h2>
         <p>Share your current integration landscape and target retailers, and we will map a practical path to compliance.</p>
       </div>
 
